@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """square module applied"""
 
+
 class Square():
-    
+
     width = 0
     height = 0
 
-    
     def __init__(self, *args, **kwargs):
         """Square class"""
         for key, value in kwargs.items():
@@ -24,9 +24,9 @@ class Square():
         """String representation of square"""
         return "{}/{}".format(self.width, self.height)
 
+
 if __name__ == "__main__":
     """create square"""
-
     s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
