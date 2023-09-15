@@ -8,6 +8,7 @@ class Square():
 
     
     def __init__(self, *args, **kwargs):
+        """Square class"""
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -16,12 +17,15 @@ class Square():
         return self.width * self.width
 
     def PermiterOfMySquare(self):
+        """Perimeter of square"""
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        """String representation of square"""
         return "{}/{}".format(self.width, self.height)
 
 if __name__ == "__main__":
+    """create square"""
 
     s = Square(width=12, height=9)
     print(s)
